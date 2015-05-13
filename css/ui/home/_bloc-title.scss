@@ -1,0 +1,20 @@
+/*------------------------------------*\
+    HOMEPAGE -- Bloc de titre
+\*------------------------------------*/
+
+.bloc-title {
+    text-align: center;
+    
+    .bloc-title__title {
+        margin: 0;
+        font-size: 24pt;
+        font-family: lato-thin;
+    }
+    
+    .bloc-title__subtitle {
+        font-size: 17pt;
+        font-family: lato-light;
+        margin-top: -8px;
+        display: inline-block;
+    }
+}

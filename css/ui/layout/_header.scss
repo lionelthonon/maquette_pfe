@@ -1,0 +1,42 @@
+/*------------------------------------*\
+    $LAYOUT STYLES -- HEADER
+\*------------------------------------*/
+
+.header {
+    background: $color-black;
+    color: $color-white;
+    border-bottom: 5px solid $color-green;
+    
+    // Bloc contenu
+    .header-content {
+        width: $main-width;
+        margin: 0 auto;
+    }
+    
+    // Titre
+    h1 {
+        margin: 0;
+        color: $color-green;
+    }
+    
+    // Navigation
+    .nav {
+        margin: 0;
+        font-family: lato-light;
+        text-transform: uppercase;
+        
+        a {
+            color: $color-white;
+            text-decoration: none;
+            padding: 12px 12px 7px;
+            text-shadow: 0 -1px $color-black;
+            transition: ease 250ms;
+            border-bottom: 5px solid $color-black;
+        }
+        
+        a:hover {
+            border-bottom-color: $color-green;
+            transition: ease 250ms;
+        }
+    }
+}

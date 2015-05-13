@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    $LAYOUT STYLES -- BLOC-CONTENT
+\*------------------------------------*/
+body {
+    background: url('../img/bg-noise.png');
+}
+
+.main-content {
+    width: $main-width;
+    margin: 25px auto 0;
+    color: $color-black;
+    font-family: lato;
+}
