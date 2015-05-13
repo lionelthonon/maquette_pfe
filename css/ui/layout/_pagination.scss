@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    LAYOUT -- Pagination
+\*------------------------------------*/
+
+.ol-pagination {
+    color: $color-black;
+    text-align: right;
+
+    a {
+        color: $color-black;
+    }
+
+    .loz {
+        background: $color-black;
+    }
+}

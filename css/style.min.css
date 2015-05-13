@@ -1701,10 +1701,9 @@ label, .label {
  */
 /* line 21, C:/wamp/www/pfe/youVote/css/inuit.css/objects/nav */
 .nav {
-  color: red;
   list-style: none;
   margin-left: 0; }
-  /* line 30, C:/wamp/www/pfe/youVote/css/inuit.css/objects/nav */
+  /* line 29, C:/wamp/www/pfe/youVote/css/inuit.css/objects/nav */
   .nav > li, .nav > li > a {
     display: inline-block;
     *display: inline;
@@ -1721,10 +1720,10 @@ label, .label {
    </ul>
  *
  */
-/* line 52, C:/wamp/www/pfe/youVote/css/inuit.css/objects/nav */
+/* line 51, C:/wamp/www/pfe/youVote/css/inuit.css/objects/nav */
 .nav--stacked > li {
   display: list-item; }
-  /* line 55, C:/wamp/www/pfe/youVote/css/inuit.css/objects/nav */
+  /* line 54, C:/wamp/www/pfe/youVote/css/inuit.css/objects/nav */
   .nav--stacked > li > a {
     display: block; }
 
@@ -1739,7 +1738,7 @@ label, .label {
    </ul>
  *
  */
-/* line 73, C:/wamp/www/pfe/youVote/css/inuit.css/objects/nav */
+/* line 72, C:/wamp/www/pfe/youVote/css/inuit.css/objects/nav */
 .nav--banner {
   text-align: center; }
 
@@ -1754,7 +1753,7 @@ label, .label {
    </ul>
  *
  */
-/* line 89, C:/wamp/www/pfe/youVote/css/inuit.css/objects/nav */
+/* line 88, C:/wamp/www/pfe/youVote/css/inuit.css/objects/nav */
 .nav--block {
   line-height: 1;
   /**
@@ -1763,11 +1762,11 @@ label, .label {
   letter-spacing: -0.31em;
   word-spacing: -0.43em;
   white-space: nowrap; }
-  /* line 98, C:/wamp/www/pfe/youVote/css/inuit.css/objects/nav */
+  /* line 97, C:/wamp/www/pfe/youVote/css/inuit.css/objects/nav */
   .nav--block > li {
     letter-spacing: normal;
     word-spacing: normal; }
-    /* line 102, C:/wamp/www/pfe/youVote/css/inuit.css/objects/nav */
+    /* line 101, C:/wamp/www/pfe/youVote/css/inuit.css/objects/nav */
     .nav--block > li > a {
       padding: 12px; }
 
@@ -1784,14 +1783,14 @@ label, .label {
  *
  * Thanks to @pimpl for this idea!
  */
-/* line 122, C:/wamp/www/pfe/youVote/css/inuit.css/objects/nav */
+/* line 121, C:/wamp/www/pfe/youVote/css/inuit.css/objects/nav */
 .nav--fit {
   display: table;
   width: 100%; }
-  /* line 126, C:/wamp/www/pfe/youVote/css/inuit.css/objects/nav */
+  /* line 125, C:/wamp/www/pfe/youVote/css/inuit.css/objects/nav */
   .nav--fit > li {
     display: table-cell; }
-    /* line 129, C:/wamp/www/pfe/youVote/css/inuit.css/objects/nav */
+    /* line 128, C:/wamp/www/pfe/youVote/css/inuit.css/objects/nav */
     .nav--fit > li > a {
       display: block; }
 
@@ -1801,10 +1800,10 @@ label, .label {
    `<ul class="nav  nav--keywords>`
  *
  */
-/* line 146, C:/wamp/www/pfe/youVote/css/inuit.css/objects/nav */
+/* line 145, C:/wamp/www/pfe/youVote/css/inuit.css/objects/nav */
 .nav--keywords > li:after {
   content: "\002C" "\00A0"; }
-/* line 150, C:/wamp/www/pfe/youVote/css/inuit.css/objects/nav */
+/* line 149, C:/wamp/www/pfe/youVote/css/inuit.css/objects/nav */
 .nav--keywords > li:last-child:after {
   display: none; }
 
@@ -1858,6 +1857,48 @@ label, .label {
 /* line 46, C:/wamp/www/pfe/youVote/css/inuit.css/objects/pagination */
 .pagination__last a:after {
   content: "\00A0" "\00BB"; }
+
+/*------------------------------------*\
+    $LOZENGES
+\*------------------------------------*/
+/**
+ * Create pill- and lozenge-like runs of text, e.g.:
+ *
+   <p>This <span class=pill>here</span> is a pill!</p>
+ *
+   <p>This <span class=loz>here</span> is also a lozenge!</p>
+ *
+ * Pills have fully rounded ends, lozenges have only their corners rounded.
+ *
+ * Demo: jsfiddle.net/inuitcss/N3pGm
+ *
+ */
+/* line 18, C:/wamp/www/pfe/youVote/css/inuit.css/objects/lozenges */
+.pill, .loz {
+  display: inline-block;
+  /**
+     * These numbers set in ems mean that, at its narrowest, a lozenge will be
+     * the same width as the `line-height` set on the `html` element.
+     * This allows us to use the `.loz` in almost any `font-size` we wish.
+     */
+  min-width: 1.0000005em;
+  padding-right: 0.2500005em;
+  padding-left: 0.2500005em;
+  /* =1.50em */
+  text-align: center;
+  background-color: #ccc;
+  color: #fff;
+  /* Override this color in your theme stylesheet */
+  /**
+     * Normally we’d use border-radius:100%; but instead here we just use an
+     * overly large number; `border-radius:100%;` would create an oval on
+     * non-square elements whereas we just want to round the ends of an element.
+     */
+  border-radius: 100px; }
+
+/* line 41, C:/wamp/www/pfe/youVote/css/inuit.css/objects/lozenges */
+.loz {
+  border-radius: 4px; }
 
 /**
  * Style trumps; helper and brand classes
@@ -3267,7 +3308,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.65);
     color: #fff;
     width: 100%;
     height: 100%;
@@ -3288,7 +3329,10 @@ body {
     /* line 65, C:/wamp/www/pfe/youVote/css/ui/layout/list-votes */
     .list-votes .vote-infos .votes-number {
       float: right; }
-  /* line 70, C:/wamp/www/pfe/youVote/css/ui/layout/list-votes */
+      /* line 68, C:/wamp/www/pfe/youVote/css/ui/layout/list-votes */
+      .list-votes .vote-infos .votes-number .icon-V {
+        color: #339966; }
+  /* line 74, C:/wamp/www/pfe/youVote/css/ui/layout/list-votes */
   .list-votes .vote-infos:hover {
     cursor: pointer;
     margin-top: 0;
@@ -3302,6 +3346,20 @@ body {
   background: #404040;
   height: 100px;
   border-top: 5px solid #339966; }
+
+/*------------------------------------*\
+    LAYOUT -- Pagination
+\*------------------------------------*/
+/* line 5, C:/wamp/www/pfe/youVote/css/ui/layout/pagination */
+.ol-pagination {
+  color: #404040;
+  text-align: right; }
+  /* line 9, C:/wamp/www/pfe/youVote/css/ui/layout/pagination */
+  .ol-pagination a {
+    color: #404040; }
+  /* line 13, C:/wamp/www/pfe/youVote/css/ui/layout/pagination */
+  .ol-pagination .loz {
+    background: #404040; }
 
 /*------------------------------------*\
     HOMEPAGE -- Bloc de titre
@@ -3320,3 +3378,20 @@ body {
     font-family: lato-light;
     margin-top: -8px;
     display: inline-block; }
+
+/*------------------------------------*\
+    PROFIL -- Bloc de titre
+\*------------------------------------*/
+/* line 4, C:/wamp/www/pfe/youVote/css/ui/profil/bloc-title */
+.bloc-img {
+  width: 96px;
+  height: 96px;
+  border-radius: 100px;
+  border: 5px solid #E6E6E6;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  margin: -15px auto -10px;
+  overflow: hidden; }
+  /* line 13, C:/wamp/www/pfe/youVote/css/ui/profil/bloc-title */
+  .bloc-img .icon-message {
+    margin: 0;
+    position: absolute; }

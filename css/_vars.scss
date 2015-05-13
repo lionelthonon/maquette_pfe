@@ -43,7 +43,7 @@ $use-arrows:        false;
 $use-sprite:        false;
 $use-icon-text:     false;
 $use-beautons:      false;
-$use-lozenges:      false;
+$use-lozenges:      true;
 $use-rules:         false;
 $use-stats:         false;
 $use-greybox:       false;
@@ -74,6 +74,6 @@ $use-greybox:       false;
 $color-black: #404040;
 $color-white: #fff;
 $color-green: #339966;
-
+$color-light-grey: #E6E6E6;
 // widths
 $main-width: 960px;
