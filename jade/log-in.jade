@@ -1,0 +1,30 @@
+extends layout.jade
+
+block title
+    title youVote | Connexion
+
+block content
+    // Title & subtitle
+    div(class="bloc-title")
+        h1(class="login-title")
+            a(href="#")
+                img(src="img/logo.png", alt="Logo du site")
+
+    // formulaire de connexion
+    div(class="bloc-login")
+        form(action="#" class="login-form")
+            div(class="login-form__group")
+                label(for="login-email")
+                    span(class="icon-message")
+                input(type="email" id="login-email" name="login-email")
+            div(class="login-form__group")
+                label(for="login-password")
+                    span(class="icon-lock")
+                input(type="password" id="login-password" name="login-password")
+            div(class="login-form__group")
+                input(type="submit" value="Se connecter")
+                a(href="#" class="password-lost") Vous avez oublié votre mot de passe ?
+
+        div(class="new-account-link")
+            span Vous n'avez pas encore de compte ?&nbsp;
+            a(href="#") Créer un compte

@@ -3,5 +3,44 @@ extends layout.jade
 block page-title
     title youVote | Demander un vote
     
+block header
+    include includes/header.jade
+
 block content
-    h2 Demander un vote
+    // Title & subtitle
+    div(class="bloc-title")
+        h2(class="bloc-title__title") Demander un vote à la communeauté
+
+    // Formulaire
+    form(action="#" class="add-list__form")
+        div(class="grid")
+            // Titre de la liste
+            div(class="grid__item one-whole")
+                div(class="grid__item one-quarter in-bl")
+                    label(for="title") Titre de votre liste
+                div(class="grid-item one-third in-bl")
+                    input(type="text" id="title" class="type-text" placeholder="Ex : Tests pour le logo Carrefour")
+
+            // Description
+            div(class="grid__item one-whole")
+                div(class="grid__item one-quarter in-bl")
+                    label(for="desc") Description
+                div(class="grid-item one-third in-bl")
+                    textarea(name="desc" rows="5" class="add-textarea" id="desc")
+
+            // upload image (dropzone.js)
+            div(class="grid__item one-whole")
+                div(class="grid__item one-quarter in-bl")
+                    label(for="desc") Ajouter des images
+                div(class="grid__item one-half in-bl hard--left")
+                    div(id="drop" class="dropzone hard--sides")
+
+            // Submit
+            div(class="grid__item one-whole")
+                div(class="grid__item one-quarter in-bl")
+                    label(for="add-img")
+                div(class="grid-item one-half in-bl")
+                    input(type="submit" value="Valider" class="add-submit")
+
+block footer
+    include includes/footer.jade

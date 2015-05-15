@@ -3,6 +3,7 @@
   <head>
     <!-- CSS-->
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="libraries/css/dropzone.css">
     <link rel="stylesheet" href="css/fontello.css">
     <!-- TITLE-->
     <title>youVote | Demander un vote</title>
@@ -10,6 +11,7 @@
     <meta charset="UTF-8">
   </head>
   <body></body>
+  <!-- header-->
   <!-- Header-->
   <div class="header cf">
     <div class="header-content">
@@ -26,10 +28,58 @@
   </div>
   <!-- content-->
   <section class="main-content cf">
-    <h2>Demander un vote</h2>
+    <!-- Title & subtitle-->
+    <div class="bloc-title">
+      <h2 class="bloc-title__title">Demander un vote à la communeauté</h2>
+    </div>
+    <!-- Formulaire-->
+    <form action="#" class="add-list__form">
+      <div class="grid">
+        <!-- Titre de la liste-->
+        <div class="grid__item one-whole">
+          <div class="grid__item one-quarter in-bl">
+            <label for="title">Titre de votre liste</label>
+          </div>
+          <div class="grid-item one-third in-bl">
+            <input type="text" id="title" placeholder="Ex : Tests pour le logo Carrefour" class="type-text">
+          </div>
+        </div>
+        <!-- Description-->
+        <div class="grid__item one-whole">
+          <div class="grid__item one-quarter in-bl">
+            <label for="desc">Description</label>
+          </div>
+          <div class="grid-item one-third in-bl">
+            <textarea name="desc" rows="5" id="desc" class="add-textarea"></textarea>
+          </div>
+        </div>
+        <!-- upload image (dropzone.js)-->
+        <div class="grid__item one-whole">
+          <div class="grid__item one-quarter in-bl">
+            <label for="desc">Ajouter des images</label>
+          </div>
+          <div class="grid__item one-half in-bl hard--left">
+            <div id="drop" class="dropzone hard--sides"></div>
+          </div>
+        </div>
+        <!-- Submit-->
+        <div class="grid__item one-whole">
+          <div class="grid__item one-quarter in-bl">
+            <label for="add-img"></label>
+          </div>
+          <div class="grid-item one-half in-bl">
+            <input type="submit" value="Valider" class="add-submit">
+          </div>
+        </div>
+      </div>
+    </form>
   </section>
   <!-- footer-->
   <section class="footer">
     <h2 class="visuallyhidden">Footer</h2>
   </section>
+  <!-- JS-->
+  <script src="libraries/js/jquery-1.11.3.min.js"></script>
+  <script src="libraries/js/dropzone.js"></script>
+  <script src="js/main.js"></script>
 </html>

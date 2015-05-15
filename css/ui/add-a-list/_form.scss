@@ -1,0 +1,54 @@
+/*------------------------------------*\
+    PAGE ADD-A-LIST -- FORMULAIRE
+\*------------------------------------*/
+
+.add-list__form {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding-top: 15px;
+    margin-top: 15px;
+
+    .type-text, .add-textarea {
+        width: 100%;
+        padding: 5px 10px;
+        border-radius: 3px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        font-family: lato-light;
+        outline: none;
+        transition: ease 200ms;
+    }
+
+    .type-text:focus, .add-textarea:focus {
+        border-color: $color-green;
+        transition: ease 200ms;
+    }
+
+    .in-bl {
+        text-align: right;
+        margin-right: 25px;
+        margin-bottom: 20px;
+    }
+
+    .add-img::-webkit-file-upload-button {
+        width: 64px;
+        height: 64px;
+        border: none;
+    }
+
+    .add-submit {
+        background: $color-green;
+        color: $color-white;
+        border: none;
+        width: 100%;
+        padding: 6px 0;
+        border-bottom: 3px solid darken($color-green, 8%);
+        transition: 200ms ease;
+    }
+
+    .add-submit:hover {
+        background: lighten($color-green, 5%);
+    }
+
+    .add-submit:active {
+        background: darken($color-green, 5%);
+    }
+}

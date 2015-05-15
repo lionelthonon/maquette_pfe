@@ -7,11 +7,29 @@
     border-radius: 100px;
     border: 5px solid $color-light-grey;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    margin: -15px auto -10px;
+    margin: -15px auto 0px;
     overflow: hidden;
+    position: relative;
+    z-index: 0;
 
     .icon-message {
         margin: 0;
         position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        font-size: 24px;
+        opacity: 0;
+        transition: 200ms ease;
+        z-index: 1;
+    }
+
+    .icon-message:hover {
+        opacity: 1;
+        padding-top: 24px;
+        cursor: pointer;
+        transition: 200ms ease;
     }
 }

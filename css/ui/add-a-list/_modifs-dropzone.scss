@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    PAGE DEMANDE VOTE -- MODIFS DROPZONE.JS
+\*------------------------------------*/
+
+#drop {
+    font-family: lato-light;
+    font-size: 17pt;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+    .dz-preview {
+        border: 1px solid $color-green;
+        border-radius: 150px;
+        overflow: hidden;
+    }
+}
